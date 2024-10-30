@@ -1,0 +1,13 @@
+Kodowania i dekodowanie tekstu składającego się z par liter.
+
+Reguły kodowania (zamiany pary liter p i q na parę liter c i d):
+1. Jeśli p i q są w różnych wierszach i kolumnach, to tworzą narożniki prostokąta wewnątrz kwadratu szyfrującego. Litery c i d należy odczytać z pozostałych dwóch narożników prostokąta, przy czym litera c powinna być w tej samej kolumnie co litera p.
+2. Jeśli p oraz q są w tym samym wierszu, c jest literą po prawej stronie p, a d jest literą po prawej stronie q (jeśli trzeba, zawija się wiersze kwadratu łącząc koniec wiersza z początkiem)
+3. Jeśli p i q są w tej samej kolumnie, c jest literą poniżej p, a d jest literą poniżej q (jeśli trzeba, zawija się kolumny, łącząc koniec kolumny z początkiem)
+4. Jeśli litery p i q są identyczne, należy wstawić pomiędzy nie literę X (czyli przed kodowaniem tekstu należy rozdzielić wszystkie sąsiadujące ze sobą jednakowe litery poprzez wstawienie pomiędzy nie litery X. Jeśli ciąg znaków zawierać będzie nieparzystą liczbę znaków, należy uzupełnić go literą X.
+
+Reguły dekodowania (zamiany pary liter c i d na parę liter p i q):
+1. Jeśli c i d są w różnych wierszach i kolumnach, to tworzą narożniki prostokąta wewnątrz kwadratu szyfrującego. Litery p i q należy odczytać z pozostałych dwóch narożników prostokąta, przy czym litera p powinna być w tej samej kolumnie co litera c.
+2. Jeśli c i d są w tym samym wierszu, p jest literą po lewej stronie c, zaś q jest litera po lewej stronie d (jeśli trzeba, zawija się wiersza łącząc początek wiersza z końcem).
+3. Jeśli c i d są w tej samej kolumnie, p jest literą powyżej c, a q jest literą powyżej d (jeśli trzeba, zawija się kolumny, łącząc początek kolumny z końcem)
+4. W zdekodowanym tekście mogą pojawić się nieporządane wystąpienia litery X. Jedynym sposobem na ich usunięcie jest analiza logiczna otrzymanego tekstu.
